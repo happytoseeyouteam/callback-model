@@ -6,6 +6,7 @@ package ai.iqoocca.enums
  */
 enum class AggregateType(val value: String) {
   CARD_STATUS_CHANGED("CARD_STATUS_CHANGED"),
+  MONEY_TRANSFER_COMPLETED("MONEY_TRANSFER_COMPLETED"),
   ;
   companion object {
     /**

@@ -5,7 +5,8 @@ package ai.iqoocca.enums
  * Outbox 이벤트의 타입을 명확하게 분류하기 위해 사용됨
  */
 enum class EventType(val value: String, val eventOrderingType: EventOrderingType) {
-  CARD_STATUS_CHANGED("CardStatusChanged", EventOrderingType.ORDERED);
+  CARD_STATUS_CHANGED("CardStatusChanged", EventOrderingType.ORDERED),
+  MONEY_TRANSFER_COMPLETED("MoneyTransferCompleted", EventOrderingType.UNORDERED);
 
   companion object {
     /**
